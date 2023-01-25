@@ -1,0 +1,95 @@
+html {
+  font-size: 1rem;
+
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: #232323;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.75rem;
+  color:aliceblue;
+}
+
+.canvasWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.buttons {
+  margin-top: 1em;
+}
+
+.shake-btn {
+  width: 750px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #ef4646;
+  cursor: pointer;
+}
+
+
+.color-btn {
+  margin-left: 1em;
+  width: 75px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 8px;
+  color: #323232;
+  background-color: #fff;
+  cursor: pointer;
+
+}
+
+canvas {
+  border: 30px solid #e80000;
+  border-radius: 10px;
+  /* Set the width and height to half the actual size so it doesn't look pixelated */
+  width: 800px;
+  height: 500px;
+  background: rgb(201, 195, 195);
+  color: black;
+}
+
+canvas.shake {
+  animation: shake 0.5s linear 1;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
