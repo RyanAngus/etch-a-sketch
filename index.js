@@ -46,9 +46,7 @@ function colorBlack() {
     
 }
 
-
 function draw({ key }) {
-    
     
     ctx.beginPath()
     ctx.moveTo(x,y)
