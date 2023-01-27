@@ -40,11 +40,11 @@ function colorRandom() {
     ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 }
 
-function colorBlack() {
-    const hue = 0;
-    ctx.strokeStyle = `hsl(${hue}, 0%, 0%)`;
-    
+function colorSelect() {
+  let selectedColor = document.getElementById('selected-color').value
+    ctx.strokeStyle = `${selectedColor}`; 
 }
+
 
 function draw({ key }) {
     
@@ -69,7 +69,7 @@ function draw({ key }) {
     ctx.lineTo(x,y);
     ctx.stroke();
 
-    color ? colorRandom() : colorBlack()
+    color ? colorRandom() : colorSelect()
   }
 
 const colorToggle = () => {
