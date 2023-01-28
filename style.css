@@ -47,6 +47,16 @@ h4 {
   margin-left: 1em;
 }
 
+.shake-btn:active {
+  background-color: #e80000;
+  box-shadow: 0 5px rgb(201, 195, 195);
+  transform: translateY(4px);
+}
+
+.shake-btn:hover {
+  opacity: 95%;
+}
+
 .shake-btn {
   width: 675px;
   height: 50px;
@@ -56,9 +66,19 @@ h4 {
   border-radius: 8px;
   color: #fff;
   background-color: #e80000;
+  box-shadow: 0 4px rgb(201, 195, 195);
   cursor: pointer;
 }
 
+.color-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(201, 195, 195);
+  transform: translateY(4px);
+}
+
+.color-btn:hover {
+  opacity: 95%;
+}
 
 .color-btn {
   margin-left: 1em;
@@ -70,6 +90,7 @@ h4 {
   border-style: none;
   border-radius: 8px;
   color: #fff;
+  box-shadow: 0 4px rgb(201, 195, 195);
   background: rgb(238,7,7);
   background: linear-gradient(90deg, rgba(238,7,7,1) 0%, rgba(7,238,8,1) 50%, rgba(104,69,252,1) 100%);
   cursor: pointer;
